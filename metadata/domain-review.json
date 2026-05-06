@@ -1,0 +1,73 @@
+{
+  "repo": "matrixyard",
+  "language": "C++",
+  "category": "Algorithms",
+  "goal": "Assemble sparse matrices and validate multiplication fixtures.",
+  "review_model": {
+    "terms": [
+      "input width",
+      "search depth",
+      "boundary pressure",
+      "complexity"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "input width",
+      "signal": 74,
+      "slack": 27,
+      "drag": 13,
+      "confidence": 66,
+      "score": 202,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "search depth",
+      "signal": 83,
+      "slack": 35,
+      "drag": 26,
+      "confidence": 62,
+      "score": 185,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "boundary pressure",
+      "signal": 61,
+      "slack": 38,
+      "drag": 24,
+      "confidence": 61,
+      "score": 149,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "complexity",
+      "signal": 86,
+      "slack": 51,
+      "drag": 14,
+      "confidence": 49,
+      "score": 230,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "input width",
+      "signal": 66,
+      "slack": 50,
+      "drag": 20,
+      "confidence": 58,
+      "score": 180,
+      "lane": "ship"
+    }
+  ]
+}
